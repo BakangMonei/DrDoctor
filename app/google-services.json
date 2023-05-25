@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "110794334618",
+    "firebase_url": "https://doctor-onalenna-default-rtdb.firebaseio.com",
+    "project_id": "doctor-onalenna",
+    "storage_bucket": "doctor-onalenna.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110794334618:android:1562b79a34a8ec124a1a23",
+        "android_client_info": {
+          "package_name": "com.ourapp.drdoctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110794334618-av81qfc9btk53vvad2hbb46sntv0qk0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4pDTlCdYarNSiThn887u97a_iva3EtmU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "110794334618-6ji7oqgl8lj9nmnbsr18r63ntiqpc9nc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

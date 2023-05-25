@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/RegistrationName"
+        android:layout_width="168dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="135dp"
+        android:text="Registration Form"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/firstNameView"
+        android:layout_width="94dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_toStartOf="@+id/registerFirstName"
+        android:layout_toLeftOf="@+id/registerFirstName"
+        android:text="firstName" />
+
+    <EditText
+        android:id="@+id/registerFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:hint="firstName"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/lastNameView"
+        android:layout_width="94dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/firstNameView"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_toStartOf="@+id/registerLastName"
+        android:layout_toLeftOf="@+id/registerLastName"
+        android:text="lastName" />
+
+    <EditText
+        android:id="@+id/registerLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerFirstName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:ems="10"
+        android:hint="lastName"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/emailView"
+        android:layout_width="94dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/lastNameView"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_toStartOf="@+id/registerEmail"
+        android:layout_toLeftOf="@+id/registerEmail"
+        android:text="email" />
+
+    <EditText
+        android:id="@+id/registerEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerLastName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/passwordView"
+        android:layout_width="94dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/emailView"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_toStartOf="@+id/registerPassword"
+        android:layout_toLeftOf="@+id/registerPassword"
+        android:text="New Password" />
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerEmail"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/DOBView"
+        android:layout_width="94dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/repassView"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_toStartOf="@+id/registerDOB"
+        android:layout_toLeftOf="@+id/registerDOB"
+        android:text="DateOfBirth" />
+
+    <EditText
+        android:id="@+id/registerDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerRePass"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:ems="10"
+        android:hint="Date Of Birth"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/genderView"
+        android:layout_width="94dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/DOBView"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_toStartOf="@+id/registerGender"
+        android:layout_toLeftOf="@+id/registerGender"
+        android:text="Gender" />
+
+    <EditText
+        android:id="@+id/registerGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerDOB"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:hint="Gender"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/phoneNumberView"
+        android:layout_width="94dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/genderView"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_toStartOf="@+id/registerPhoneNumber"
+        android:layout_toLeftOf="@+id/registerPhoneNumber"
+        android:text="PhoneNumber" />
+
+    <EditText
+        android:id="@+id/registerPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerGender"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/postalAddressView"
+        android:layout_width="94dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/phoneNumberView"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_toStartOf="@+id/registerPostalAddress"
+        android:layout_toLeftOf="@+id/registerPostalAddress"
+        android:text="Postal Address"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/registerPostalAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerPhoneNumber"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:ems="10"
+        android:hint="Postal Address"
+        android:inputType="textPostalAddress" />
+
+    <TextView
+        android:id="@+id/countryView"
+        android:layout_width="94dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/postalAddressView"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_toStartOf="@+id/registerCountry"
+        android:layout_toLeftOf="@+id/registerCountry"
+        android:text="Country"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/registerCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerPostalAddress"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:ems="10"
+        android:hint="Country"
+        android:inputType="textPersonName"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="105dp"
+        android:layout_marginRight="105dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/darkBlue"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/IDPassportView"
+        android:layout_width="94dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/countryView"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_toStartOf="@+id/registerIDPass"
+        android:layout_toLeftOf="@+id/registerIDPass"
+        android:text="ID/Passport Number"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/registerIDPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerCountry"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:ems="10"
+        android:hint="ID/Passport Number"
+        android:inputType="textPersonName"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/repassView"
+        android:layout_width="94dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/passwordView"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_toStartOf="@+id/registerRePass"
+        android:layout_toLeftOf="@+id/registerRePass"
+        android:text="Re-Enter Password" />
+
+    <EditText
+        android:id="@+id/registerRePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:ems="10"
+        android:hint="Re-Enter Password"
+        android:inputType="textPassword" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="643dp"
+        android:layout_marginEnd="317dp"
+        android:layout_marginRight="317dp" />
+
+</RelativeLayout>

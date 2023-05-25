@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientUserClass">
+
+
+    <TextView
+        android:id="@+id/patientTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="123dp"
+        android:fontFamily="monospace"
+        android:text="DashBoard"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/diseasesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patientTextView"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:text="Headache || Fever || Swelling
+        \n|| Morning Sickness || Diarrhoea \n|| Nose Bleed || Running Nose" />
+
+    <EditText
+        android:id="@+id/symptom1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diagnosisTextView"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Symptom1"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/symptom2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/symptom1"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Symptom2"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/symptom3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/symptom2"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Symptom3"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/diagnosisTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diseasesTextView"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:text="Diagnosed Disease Here"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-black"/>
+
+    <EditText
+        android:id="@+id/dateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/symptom3"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Appointment Date"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="monospace" />
+
+    <Button
+        android:id="@+id/analyseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneNumberEditText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="130dp"
+        android:backgroundTint="@color/back_blue"
+        android:text="Analyze" />
+
+    <Button
+        android:id="@+id/buttonBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/analyseButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="125dp"
+        android:backgroundTint="@color/back_blue"
+        android:text="Book" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateTime"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Email Here"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="monospace"/>
+
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailEditText"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Phone Number"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="monospace" />
+
+
+</RelativeLayout>
